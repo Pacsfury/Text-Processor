@@ -66,14 +66,14 @@ btn_home.addEventListener("click", async () => {
                         // Update localstorage
                         localStorage.setItem('currentFileName', newFileName);
                         
-                        window.location.href = "menu.html";
+                        window.location.href = "index.html";
                     }
                 } catch (err) {
                     console.error("Error al guardar/renombrar:", err);
-                    window.location.href = "menu.html";
+                    window.location.href = "index.html";
                 }
             } else {
-                window.location.href = "menu.html";
+                window.location.href = "index.html";
             }
         };
     };
