@@ -49,7 +49,7 @@ btnNew.addEventListener("click", async () => {
         const fileHandle = await directoryHandle.getFileHandle(fileName, { create: true });
         const writable = await fileHandle.createWritable();
         
-        const initialHTML = `<!DOCTYPE html><html lang="ca"><head><meta charset="UTF-8"></head><body><p>Comença a escriure...</p></body></html>`;
+        const initialHTML = `<!DOCTYPE html><html lang="ca"><head><meta charset="UTF-8"></head><body><p>Writing is waiting you...</p></body></html>`;
         await writable.write(new Blob([initialHTML], { type: 'text/html;charset=utf-8' }));
         await writable.close();
 
