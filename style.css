@@ -95,7 +95,7 @@ p[contenteditable="true"] {
 
 #inp_name:focus {
   height: 26.5px;
-  width: 70px;
+  width: 180px;
   color: #007115;
   background-color: #a7ffa7;
   border: 1px solid #68ff68;
@@ -200,4 +200,65 @@ h1 {
     border-color: #267a26;
     transform: translateY(2px);
     box-shadow: 2px 2px 0px #7efa6e;
+}
+
+/* --- DARK MODE --- */
+
+#btn_dark_mode {
+    background-color: #dcffdc;
+}
+
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode h1 {
+    color: #a4ffa4; 
+}
+
+body.dark-mode p[contenteditable="true"] {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .card {
+    background: #2d2d2d;
+    border-color: #3d3d3d;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .card span {
+    color: #e0e0e0;
+}
+
+body.dark-mode .card:hover {
+    border-color: #48c948;
+    background: #363636;
+}
+
+/* --- DARK MODE CORRECTIONS --- */
+
+/* TOOLBAR SHADOWS */
+
+body.dark-mode .toolbar button,
+body.dark-mode .toolbar input {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    border-color: #2b7a2b; 
+}
+
+body.dark-mode .toolbar button:hover {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .toolbar button:active,
+body.dark-mode .toolbar button.active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .toolbar input {
+    background-color: #d1ebd1; 
+    color: #004d11;
 }
