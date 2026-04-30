@@ -51,9 +51,9 @@ btn_home.addEventListener("click", async () => {
                         if (oldFileName && oldFileName !== newFileName) {
                             try {
                                 await rootHandle.removeEntry(oldFileName);
-                                console.log("Fitxer antic esborrat");
+                                console.log("Old file deleted");
                             } catch (e) {
-                                console.log("No s'ha pogut esborrar (potser no existia)");
+                                console.log("Nohing changed");
                             }
                         }
 
