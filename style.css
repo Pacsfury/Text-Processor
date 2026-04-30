@@ -206,6 +206,12 @@ h1 {
 
 #btn_dark_mode {
     background-color: #dcffdc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 
@@ -245,6 +251,11 @@ body.dark-mode .card:hover {
 
 body.dark-mode .toolbar button,
 body.dark-mode .toolbar input {
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    border-color: #2b7a2b; 
+}
+
+#inp_name {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
     border-color: #2b7a2b; 
 }
