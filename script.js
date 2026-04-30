@@ -126,3 +126,24 @@ function aplicateFormat(format, extra) {
     }
     updateButtonStates();
 }
+
+
+// DARK MODE
+const btnDarkMode = document.getElementById("btn_dark_mode");
+
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+    if (btnDarkMode) btnDarkMode.innerText = '☀️';
+}
+
+if (btnDarkMode) {
+    btnDarkMode.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        const isDark = document.body.classList.contains('dark-mode');
+        
+        localStorage.setItem('darkMode', isDark);
+        
+        btnDarkMode.innerText = isDark ? '☀️' : '🌙';
+    });
+}
