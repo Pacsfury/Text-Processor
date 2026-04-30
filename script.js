@@ -1,3 +1,4 @@
+
 const d = document;
 
 const btn_bold = d.getElementById("btn_bold");
