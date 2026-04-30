@@ -117,7 +117,7 @@ Text-Processor/
 ## 🔄 Future Improvements
 
 - [ ] Export to PDF/DOCX formats
-- [ ] Dark mode theme
+- [X] Dark mode theme
 - [ ] Keyboard shortcuts reference
 - [ ] Undo/Redo history
 - [ ] Search and replace
