@@ -14,6 +14,10 @@ const inp_name = d.getElementById("inp_name");
 
 const btn_home = d.getElementById("btn_home");
 
+const btn_html = d.getElementById("btn_html-ins");
+const inp_html = d.getElementById("inp_html");
+
+
 // Load content when opened
 window.onload = () => {
 
@@ -26,7 +30,7 @@ window.onload = () => {
 
 };
 
-// House Button: save ans quit
+// House Button: save and quit
 
 btn_home.addEventListener("click", async () => {
     // 1. Recuperem el nom antic (el que teníem al carregar)
@@ -86,6 +90,8 @@ btn_italic.addEventListener("click", () => aplicateFormat('italic'));
 btn_underl.addEventListener("click", () => aplicateFormat('underline'));
 btn_font.addEventListener("click", () => aplicateFormat('fontName', inp_font.value ));
 btn_color.addEventListener("click", () => aplicateFormat('foreColor', inp_color.value ));
+
+btn_html.addEventListener("click", () => d.querySelector('p[contenteditable="true"]').innerHTML += inp_html.value)
 
 function aplicateFormat(format, extra) {
     if (!extra) {

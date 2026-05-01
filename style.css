@@ -273,3 +273,13 @@ body.dark-mode .toolbar input {
     background-color: #d1ebd1; 
     color: #004d11;
 }
+
+#inp_html:focus {
+    width: 180px;
+}
+
+p[contenteditable="true"] img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Per mantenir l'estètica suau del projecte */
+}
