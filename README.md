@@ -131,7 +131,7 @@ This is a learning project! If you have suggestions or find bugs, please open an
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the Apache 2.0 License.
 
 ---
 
